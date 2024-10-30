@@ -1,1 +1,90 @@
-/* CSS for your imitation here */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 650px;
+    height: 700px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+/* Header Styles */
+.header h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin: 20px 0;
+}
+
+.basketball-image {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.shoe-image {
+    width: 300px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Body Text */
+.body-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nike-logo {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downtown {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.location {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
