@@ -1,44 +1,135 @@
-/* Code for all screen sizes */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* BEGIN MOBILE RULES */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #d8d1d1;
+    text-align: center;
+}
+
+/* Header Styles */
+.header h1 {
+    font-size: 200px;
+    font-weight: 900;
+    line-height: 1;
+    
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin: 20px 0;
+}
+
+.shoe-image {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Body Text */
+.body-text {
+    font-size: 16px;
+    margin-top: auto;
+    text-indent: 5px;
+    margin-bottom: 0;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 20px;
+}
+
+.nike-logo {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downtown {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.location, .footer-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* MOBILE RULES */
 @media only screen and (max-width: 768px) {
-  /* Code for mobile phones only: */
+    .header h1 {
+        font-size: 60px; /* Adjust for mobile */
+    }
+    .shoe-image {
+        width: 200px; /* Smaller image for mobile */
+    }
+    .body-text, .footer {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
 
-  /* Mobile label */
-  main::before {
-    content: "Mobile";
-    background-color: #c8787888;
-  }
-  /* End mobile label */
+    /* Mobile label */
+    main::before {
+        content: "Mobile";
+        background-color: #c8787888;
+    }
 }
 
-/* BEGIN MEDIUM WIDTH RULES */
+/* TABLET RULES */
 @media only screen and (min-width: 768px) and (max-width: 1399px) {
-  /* Code for medium width and bigger : */
+    .header h1 {
+        font-size: 90px; /* Adjust for tablet */
+    }
+    .shoe-image {
+        width: 250px; /* Medium-sized image for tablet */
+    }
 
-  /* Laptop label */
-  main::before {
-    content: "Laptop";
-    background-color: #45454588;
-  }
-  /* End laptop label */
+    /* Laptop label */
+    main::before {
+        content: "Laptop";
+        background-color: #45454588;
+    }
 }
 
-/* BEGIN WIDE SCREEN RULES */
+/* WIDE SCREEN RULES */
 @media only screen and (min-width: 1400px) {
-  /* Code for wide screen only */
+    .header h1 {
+        font-size: 120px; /* Larger header for wide screen */
+    }
+    .shoe-image {
+        width: 300px;
+        position: absolute;
+        bottom: -165px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-  /* Widescreen label */
-  main::before {
-    content: "Wide";
-    background-color: #00438888;
-  }
-  /* End widescreen label */
+    /* Widescreen label */
+    main::before {
+        content: "Wide";
+        background-color: #00438888;
+    }
 }
 
-/* BACK TO CODE FOR ALL SIZES */
-
-/* Code to insert circular label label to show how responsive code is working on lower right */
+/* Code for all screen sizes - Circular label for screen type */
 main::before {
   position: fixed;
   bottom: 2px;
