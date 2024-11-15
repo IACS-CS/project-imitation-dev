@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Basic Reset */
 * {
     margin: 0;
@@ -11,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f8f8f8;
-    font-family: Arial, sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .container {
@@ -35,15 +36,15 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    margin: 20px 0;
+    margin: 90px 0;
 }
 
 
 
 .shoe-image {
-    width: 300px;
+    width: 325px;
     position: absolute;
-    bottom: -165px;
+    bottom: -205px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -51,9 +52,7 @@ body {
 /* Body Text */
 .body-text {
     font-size: 16px;
-    margin-top: auto;
   text-indent: 5px
-  margin-bottom: 0;
 }
 }
 
