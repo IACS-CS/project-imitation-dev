@@ -61,7 +61,7 @@ body {
 /* Header Styles */
 .header h1 {
     font-size: 200px;
-    font-weight: 900;
+    font-weight: 1200;
     line-height: 1;
     animation: slideIn 1s ease-in-out;
 }
@@ -116,13 +116,13 @@ body {
 /* MOBILE RULES */
 @media only screen and (max-width: 768px) {
     .header h1 {
-        font-size: 60px; /* Adjust for mobile */
+        font-size: 100px; /* Adjust for mobile */
     }
     .shoe-image {
         width: 200px; /* Smaller image for mobile */
     }
     .body-text, .footer {
-        font-size: 14px; /* Smaller font size for mobile */
+        font-size: 16px; /* Smaller font size for mobile */
     }
 }
 
@@ -137,9 +137,9 @@ body {
 }
 
 /* WIDE SCREEN RULES */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
     .header h1 {
-        font-size: 120px; /* Larger header for wide screen */
+        font-size: 140px; /* Larger header for wide screen */
     }
     .shoe-image {
         width: 300px;
