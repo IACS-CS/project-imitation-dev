@@ -15,11 +15,47 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 100%;
     padding: 20px;
     border: 2px solid #000;
     background-color: #d8d1d1;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9) translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05) translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Header Styles */
@@ -27,13 +63,14 @@ body {
     font-size: 200px;
     font-weight: 900;
     line-height: 1;
-    
+    animation: slideIn 1s ease-in-out;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     margin: 20px 0;
+    animation: bounceIn 1.5s ease-out;
 }
 
 .shoe-image {
@@ -44,14 +81,16 @@ body {
 /* Body Text */
 .body-text {
     font-size: 16px;
-    margin-top: auto;
+    margin-top: 20px;
     text-indent: 5px;
     margin-bottom: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Footer Section */
 .footer {
     margin-top: 20px;
+    animation: fadeIn 2.5s ease-in-out;
 }
 
 .nike-logo {
@@ -85,12 +124,6 @@ body {
     .body-text, .footer {
         font-size: 14px; /* Smaller font size for mobile */
     }
-
-    /* Mobile label */
-    main::before {
-        content: "Mobile";
-        background-color: #c8787888;
-    }
 }
 
 /* TABLET RULES */
@@ -100,12 +133,6 @@ body {
     }
     .shoe-image {
         width: 250px; /* Medium-sized image for tablet */
-    }
-
-    /* Laptop label */
-    main::before {
-        content: "Laptop";
-        background-color: #45454588;
     }
 }
 
@@ -121,26 +148,22 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
-
-    /* Widescreen label */
-    main::before {
-        content: "Wide";
-        background-color: #00438888;
-    }
 }
 
-/* Code for all screen sizes - Circular label for screen type */
+/* Circular label for screen type */
 main::before {
-  position: fixed;
-  bottom: 2px;
-  right: 2px;
-  color: #efefef;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-family: Helvetica, sans-serif;
-  font-size: 8pt;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    color: #efefef;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-family: Helvetica, sans-serif;
+    font-size: 8pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    content: "Responsive";
 }
