@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 650px;
-    height: 700px;
+    height: 740px;
     background-color: #d8d1d1;
     padding: 20px;
     border: 2px solid #000;
@@ -27,7 +27,7 @@ body {
 
 /* Header Styles */
 .header h1 {
-    font-size: 120px;
+    font-size: 150px;
     font-weight: bold;
     line-height: 0.9;
    
@@ -60,6 +60,7 @@ body {
 .footer {
    
     text-align: center;
+    text-indent: 5px;
 }
 
 .nike-logo {
@@ -82,8 +83,8 @@ body {
 }
 
 .footer-text {
-    font-size: 14px;
+    font-size: 12px;
     color: #333;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
